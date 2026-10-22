@@ -1,0 +1,15 @@
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; background: #f3f4f6; color: #111827; }
+.container { max-width: 720px; margin: 0 auto; padding: 24px 16px; }
+.nav { display: flex; justify-content: space-between; align-items: center; padding: 12px 24px; background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
+.nav nav { display: flex; align-items: center; gap: 14px; }
+.nav a { color: #2563eb; text-decoration: none; }
+.brand { font-weight: 700; font-size: 18px; color: #111827 !important; }
+.card { background: #fff; padding: 20px; border-radius: 10px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
+.auth { display: flex; flex-direction: column; gap: 10px; max-width: 400px; margin: 40px auto; }
+input, textarea, select { padding: 9px 10px; border: 1px solid #d1d5db; border-radius: 6px; font: inherit; }
+button { padding: 9px 14px; border: 0; border-radius: 6px; background: #2563eb; color: #fff; cursor: pointer; font: inherit; }
+button:disabled { background: #9ca3af; cursor: not-allowed; }
+.error { color: #dc2626; margin: 0; font-size: 14px; }
+.muted { color: #6b7280; font-size: 14px; margin: 0; }
