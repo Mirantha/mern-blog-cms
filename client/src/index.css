@@ -13,3 +13,26 @@ button { padding: 9px 14px; border: 0; border-radius: 6px; background: #2563eb; 
 button:disabled { background: #9ca3af; cursor: not-allowed; }
 .error { color: #dc2626; margin: 0; font-size: 14px; }
 .muted { color: #6b7280; font-size: 14px; margin: 0; }
+
+.cover { width: 100%; max-height: 320px; object-fit: cover; border-radius: 8px; margin-bottom: 10px; }
+
+.post h3 { margin: 0 0 4px; }
+.post a { color: #111827; text-decoration: none; }
+.post a:hover { color: #2563eb; }
+.tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+.tag { background: #e5e7eb; color: #374151; padding: 2px 10px; border-radius: 999px; font-size: 13px; }
+.toolbar { flex-direction: row; align-items: center; }
+.toolbar input { flex: 1; }
+.pagination { display: flex; justify-content: space-between; align-items: center; margin-top: 16px; }
+.stack { display: flex; flex-direction: column; gap: 10px; }
+.content { white-space: pre-wrap; line-height: 1.7; }
+.badge { font-size: 12px; padding: 2px 8px; border-radius: 999px; background: #fef3c7; color: #b45309; }
+.badge.published { background: #dcfce7; color: #15803d; }
+.row { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 10px 0; border-bottom: 1px solid #e5e7eb; }
+.row:last-child { border-bottom: 0; }
+.row h3 { margin: 0; }
+.actions { display: flex; gap: 10px; align-items: center; }
+button.danger { background: #dc2626; }
+.btn { display: inline-block; padding: 9px 14px; border-radius: 6px; background: #2563eb; color: #fff !important; text-decoration: none; }
+.cover { width: 100%; max-height: 320px; object-fit: cover; border-radius: 8px; margin-bottom: 10px; }
+.toolbar { display: flex; gap: 10px; }

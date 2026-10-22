@@ -6,6 +6,7 @@ import cookieParser from "cookie-parser";
 import postRoutes from "./routes/postRoutes.js";
 import authRoutes from "./routes/authRoutes.js";
 import { notFound, errorHandler } from "./middleware/errorHandler.js";
+import uploadRoutes from "./routes/uploadRoutes.js";
 
 const app = express();
 
@@ -18,6 +19,7 @@ app.use(morgan("dev"));
 app.get("/api/health", (req, res) => res.json({ status: "ok" }));
 app.use("/api/auth", authRoutes);
 app.use("/api/posts", postRoutes);
+app.use("/api/uploads", uploadRoutes);
 
 app.use(notFound);
 app.use(errorHandler);

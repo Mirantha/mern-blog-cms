@@ -4,6 +4,9 @@ export const notFound = (req, res) => {
 
 export const errorHandler = (err, req, res, next) => {
   console.error(err);
+    if (err.code === "LIMIT_FILE_SIZE") {
+    return res.status(400).json({ message: "Image must be under 2MB" });
+  }
 
   if (err.name === "ValidationError") {
     const errors = Object.values(err.errors).map((e) => e.message);

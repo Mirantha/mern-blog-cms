@@ -6,6 +6,7 @@ const postSchema = new mongoose.Schema(
     slug: { type: String, required: true, unique: true },
     content: { type: String, required: true },
     excerpt: { type: String, trim: true, maxlength: 300, default: "" },
+    coverImage: { type: String, default: "" },
     tags: { type: [String], default: [] },
     status: { type: String, enum: ["draft", "published"], default: "draft" },
     author: { type: mongoose.Schema.Types.ObjectId, ref: "User", required: true },

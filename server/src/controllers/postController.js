@@ -9,6 +9,12 @@ const baseSchema = z.object({
   excerpt: z.string().max(300).optional(),
   tags: z.array(z.string().trim().toLowerCase().min(1).max(30)).max(8).optional(),
   status: z.enum(["draft", "published"]).optional(),
+    coverImage: z
+    .string()
+    .url()
+    .refine((u) => u.startsWith("https://res.cloudinary.com/"), "Invalid image URL")
+    .optional()
+    .or(z.literal("")),
 });
 const createSchema = baseSchema;
 const updateSchema = baseSchema.partial();
